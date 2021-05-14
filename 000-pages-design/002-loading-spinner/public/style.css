@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.loading {
+    height: 6rem;
+    width: 6rem;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    border-top-color: #645cff;
+    animation: spinner 0.6s linear infinite;
+    /* margin: 3rem auto; */
+    display: inline-block;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* end of loading */
+
+.d {
+    font-size: 1.5rem;
+    color: #233233;
+}
