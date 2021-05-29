@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: black; */
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: block;
+}
+
+.part {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
