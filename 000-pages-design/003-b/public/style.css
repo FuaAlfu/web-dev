@@ -20,9 +20,32 @@ header {
     font-weight: bold;
 }
 
+header>p {
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2;
+}
+
+hr {
+    border: 1px dot;
+    width: 30px;
+    border: dotted #EAF6F6 6px;
+    /* border: dotted #EAF 6px; */
+    border-bottom: none;
+    width: 4%;
+    margin: 20px auto;
+}
+
 img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
+    border: 1px solid #EAF6F6;
+    border-radius: 5px;
+}
+
+img:hover {
+    transform: rotate(2deg);
 }
 
 .container {
@@ -35,7 +58,8 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 5px 5px;
     text-align: center;
-    height: 100%;
-    width: 100%;
+    height: 30%;
+    width: 50%;
 }
