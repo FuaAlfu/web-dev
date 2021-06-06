@@ -803,7 +803,7 @@ header nav .form i {
     padding-bottom: var(--section-padding);
     background-image: url(../images/design-cover.jpg);
     background-size: cover;
-    position: absolute;
+    position: relative;
     text-align: center;
     color: wheat;
 }
