@@ -830,3 +830,57 @@ header nav .form i {
 
 
 /* End of quote */
+
+.pricing {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.pricing .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250, 1fr));
+    gap: 30px;
+}
+
+.pricing .plans .plan {
+    background-color: #fcfcfc;
+    text-align: center;
+}
+
+.pricing .plans .plan .head {
+    padding: 40px 20px;
+    border-top: 1px solid var(--clr-main-color);
+    border-bottom: 1px solid var(--clr-main-color);
+}
+
+.pricing .plans .plan .head h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.pricing .plans .plan .head span {
+    font-size: 60px;
+    /* font-weight:600; */
+    font-weight: bold;
+    /* position: relative; */
+}
+
+.pricing .plans .plan .head span::before {
+    content: "$";
+    font-size: 25px;
+    position: relative;
+    top: -40px;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.pricing .plans .plan .head span::after {
+    content: "/Mo";
+    font-size: 25px;
+    position: relative;
+    right: -15px;
+}
+
+
+/* End of pricing :: plans */
