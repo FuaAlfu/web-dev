@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+}
+
+.head {
+    text-align: center;
+    color: #777;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.head p {
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    text-align: center;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.blog {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    color: #777;
+}
+
+
+/* button */
+
+.btn {
+    color: #dbc1ac;
+    font-weight: bold;
+    /* line-height: 1; */
+    border: 2px solid #634832;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 25px;
+}
+
+.hvr-right {
+    display: inline-block;
+    vertical-align: middle;
+    transition-duration: 0.5s;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0);
+    position: relative;
+    transition-property: color;
+}
+
+.hvr-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #dbc1ac;
+    transition-timing-function: ease-out;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.hvr-right:hover,
+.hvr-right:focus .hvr-right:active {
+    color: #000;
+}
+
+.hvr-right:hover:before,
+.hvr-right:focus:before,
+.hvr-right:active:before {
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transform: scaleX(1);
+}
