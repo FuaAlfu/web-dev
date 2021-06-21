@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 1.6;
+    /* scroll-snap-align: stretch; */
+    scroll-snap-align: start;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.one {
+    background-color: rgba(50, 120, 122, 0.9)
+}
+
+.two {
+    background-color: rgba(211, 120, 122, 0.9)
+}
+
+.three {
+    background-color: rgba(120, 120, 122, 0.9)
+}
+
+.four {
+    background-color: rgba(90, 120, 122, 0.9)
+}
