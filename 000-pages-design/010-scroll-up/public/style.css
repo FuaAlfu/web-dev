@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1000vh;
+    width: 100%;
+    font-family: sans-serif, serif;
+}
+
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -30px;
+    background-color: #ffc2b0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: Arial, Tahoma;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.up.show {
+    right: 10px;
+}
+
+.up:hover {
+    background-color: #ff9270;
+}
