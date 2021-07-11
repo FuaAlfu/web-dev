@@ -301,7 +301,7 @@ Navbar
     align-items: center;
 }
 
-.nav-logo{
+.nav-logo {
     /* background: red; */
     display: flex;
     align-items: center;
@@ -311,21 +311,28 @@ Navbar
     /* width: 200px; */
 }
 
-.nav-btn{
+.nav-btn {
     padding: 0.15rem 0.75rem;
 }
 
-.nav-btn i{
+.nav-btn i {
     font-size: 1.25rem;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     flex-direction: column;
     /* todo */
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
 }
 
-.nav-link{
+.show-links {
+    height: 310px;
+}
+
+.nav-link {
     display: block;
     text-align: center;
     text-transform: capitalize;
@@ -336,10 +343,10 @@ Navbar
     transition: var(--transition);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--primary-500);
 }
 
-.contact-link  a{
+.contact-link a {
     padding: 0.15rem 1rem;
 }
