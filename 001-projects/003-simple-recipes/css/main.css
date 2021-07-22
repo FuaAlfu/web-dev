@@ -399,3 +399,36 @@ Navbar
     .page-footer a {
         color: var(--primary-500);
     }
+    
+    .hero {
+        height: 40vh;
+        background: url(../assest/main.jpeg) center/cover no-repeat;
+        margin-bottom: 2rem;
+        border-radius: var(--borderRadius);
+        position: relative;
+    }
+    
+    .hero-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.04);
+        border-radius: var(--borderRadius);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hero-txt {
+        text-align: center;
+        color: wheat;
+    }
+    
+    @media screen and(min-width: 768px) {
+        .hero-txt {
+            font-size: 4rem;
+            margin-bottom: 0;
+        }
+    }
