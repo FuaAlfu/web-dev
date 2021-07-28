@@ -543,3 +543,33 @@ Navbar
     .error-page h1{
         font-size: 9rem;
     }
+
+    /* about */
+    .featured-title{
+        text-align: center;
+    }
+
+    .about-page{
+        display: grid;
+        gap: 2rem 4rem;
+        padding-bottom: 3rem;
+    }
+    .about-img{
+        border-radius: var(--borderRadius);
+        height: 300px;
+    }
+    .about-page h2{
+        text-transform: none;
+        font-size: bold;
+    }
+
+    @media screen and (min-width:992px){
+        .about-page{
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows:400px;
+            align-items: center;
+        }
+        .about-img{
+            height: 100%;
+        }
+    }
