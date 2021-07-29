@@ -501,75 +501,98 @@ Navbar
         color: var(--grey-500);
         letter-spacing: var(--letterSpacing);
     }
-
-    @media screen and (min-width:576px){
-        .recipes-list{
-            grid-template-columns: repeat(2, 1fr);;
+    
+    @media screen and (min-width:576px) {
+        .recipes-list {
+            grid-template-columns: repeat(2, 1fr);
+            ;
         }
-        .recipe-img{
+        .recipe-img {
             height: 10rem;
         }
     }
-
-    @media screen and (min-width:992px){
-        .recipes-container{
-            grid-template-columns: 200px 1fr; 
+    
+    @media screen and (min-width:992px) {
+        .recipes-container {
+            grid-template-columns: 200px 1fr;
         }
-        .tags-container{
+        .tags-container {
             order: 0;
         }
-        .tags-list{
+        .tags-list {
             grid-template-columns: 1fr;
         }
-        .recipe p{
+        .recipe p {
             font-size: 0.85rem;
         }
     }
-    @media screen and (min-width:1200px){
-        .recipes-list{
-            grid-template-columns: repeat(3,1fr);
+    
+    @media screen and (min-width:1200px) {
+        .recipes-list {
+            grid-template-columns: repeat(3, 1fr);
         }
-        .recipe h5{
+        .recipe h5 {
             font-size: 1.5rem;
         }
     }
-
     /* error */
-    .error-page{
-        text-align:center;
+    
+    .error-page {
+        text-align: center;
         padding-top: 5rem;
     }
-
-    .error-page h1{
+    
+    .error-page h1 {
         font-size: 9rem;
     }
-
     /* about */
-    .featured-title{
+    
+    .featured-title {
         text-align: center;
     }
-
-    .about-page{
+    
+    .about-page {
         display: grid;
         gap: 2rem 4rem;
         padding-bottom: 3rem;
     }
-    .about-img{
+    
+    .about-img {
         border-radius: var(--borderRadius);
         height: 300px;
     }
-    .about-page h2{
+    
+    .about-page h2 {
         text-transform: none;
         font-size: bold;
     }
-
-    @media screen and (min-width:992px){
-        .about-page{
-            grid-template-columns:repeat(2,1fr);
-            grid-template-rows:400px;
+    
+    @media screen and (min-width:992px) {
+        .about-page {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 400px;
             align-items: center;
         }
-        .about-img{
+        .about-img {
             height: 100%;
+        }
+    }
+    /* contact */
+    
+    .contact-container {
+        display: grid;
+        gap: 2rem 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .contact-form {
+        width: 100%;
+        margin: 0;
+    }
+    
+    @media screen and (min-width:992px) {
+        .contact-container {
+            grid-template-columns: 1fr 450px;
+            align-items: center;
         }
     }
