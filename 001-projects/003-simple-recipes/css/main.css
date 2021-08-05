@@ -649,7 +649,7 @@ Navbar
         border-radius: var(--borderRadius);
     }
     
-    .recipe-info p {
+    .recipe-hero p {
         color: var(--grey-600);
     }
     
