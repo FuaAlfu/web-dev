@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background{
+    background: url('https://th.bing.com/th/id/R.5ae937bde2be50fbda0076223584ad31?rik=Bnr4nVetGCK%2foQ&riu=http%3a%2f%2fja.best-wallpaper.net%2fwallpaper%2f1920x1080%2f1603%2fJapanese-girl-Asian-kimono-clothes_1920x1080.jpg&ehk=pLcCzLoVD174dyC8XCMa9bUz4suuI5MV9CGdMOqwPxs%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover;
+    position:absolute;
+    top:-30px;
+    left:-30px;
+    width:calc(100vw + 60px);
+    height:calc(100vh + 60px);
+    z-index:-1;
+    filter:blur(0px);
+}
+
+.loading-txt{
+    font-size: 3.7rem;
+    color:red;
+}
