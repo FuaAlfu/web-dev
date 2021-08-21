@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    margin-top: 2.7rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 180px;
+    width: 409px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part {
+    padding-left: 32px;
+    background: #777;
+    color: wheat;
+}
