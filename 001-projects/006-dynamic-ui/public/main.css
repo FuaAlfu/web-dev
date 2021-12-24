@@ -1,0 +1,47 @@
+@use './saas/layout/global-rules';
+@use './sass/pages/contact';
+body {
+  font-family: sans-serif;
+  background-color: rgba(82, 82, 102, 0.9);
+}
+
+.class-1 {
+  font-size: 13px;
+}
+
+.class-2 {
+  font-size: 14px;
+}
+
+.class-3 {
+  font-size: 15px;
+}
+
+.class-4 {
+  font-size: 16px;
+}
+
+.class-5 {
+  font-size: 17px;
+}
+
+.class-6 {
+  font-size: 18px;
+}
+
+.class-7 {
+  font-size: 19px;
+}
+
+.class-8 {
+  font-size: 20px;
+}
+
+.class-9 {
+  font-size: 21px;
+}
+
+.class-10 {
+  font-size: 22px;
+}
+/*# sourceMappingURL=main.css.map */
