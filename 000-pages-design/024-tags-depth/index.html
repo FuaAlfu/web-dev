@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="title">hi and welcome</h1>
+        <article class="sub">
+            <h2>start from..</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quae, numquam perspiciatis inventore, fuga atque in quibusdam odit tenetur iste dicta, placeat similique deleniti. Et ratione fugit optio. Illo, exercitationem.</p>
+            <br>
+            <button onclick="myFunction()" id="myButton" value="change title" class="btn">Change title</button>
+            <input type="text" id="teto">
+        </article>
+    </div>
+    <footer>
+        <p class="date" style="font-size:1.5rem; color:#233233;">&copy; copyright - <span id="d"></span></p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+<script>
+    function myFunction() {
+
+        let btn = document.getElementById("myButton");
+
+        if (btn.value == "Change title") {
+            btn.value = "Close button";
+            btn.innerHTML = "Close button";
+        } else {
+            btn.value = "Change title";
+            btn.innerHTML = "Change title";
+        }
+
+    }
+</script>
+
+</html>
