@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.box-one {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    height: 100px;
+    width: 100px;
+    background: red;
+    opacity: 0.5;
+}
+
+.box-two {
+    display: grid;
+    place-items: center;
+    height: 100px;
+    width: 100px;
+    background: blue;
+    opacity: 0.7;
+}
+
+.box-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: green;
+    opacity: 0.3;
+}

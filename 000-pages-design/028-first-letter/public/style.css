@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.test::first-letter {
+    float: left;
+    font-size: 10rem;
+    line-height: 0.71;
+}
