@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="old-comtainer">
+            <div class="box col-2">
+                <p>1</p>
+            </div>
+            <div class="box col-2">
+                <p>2</p>
+            </div>
+            <div class="box col-2">
+                <p>3</p>
+            </div>
+            <div class="box col-2">
+                <p>4</p>
+            </div>
+        </div>
+        <!-- old -->
+        <div class="btn">
+            <button onclick="myFunction()">modern</button>
+        </div>
+        <!-- end of btn -->
+        <div id="f" class="modern-container ">
+            <div class="box col-1">
+                <p>1</p>
+            </div>
+            <div class="box col-1">
+                <p>2</p>
+            </div>
+            <div class="box col-1">
+                <p>3</p>
+            </div>
+            <div class="box col-1">
+                <p>4</p>
+            </div>
+        </div>
+    </div>
+    <!-- end of MAIN -->
+    <footer>
+        <p class="d">&copy; copyright - <span id="d"></span></p>
+    </footer>
+    <script src="app.js "></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("f");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

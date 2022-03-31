@@ -1,0 +1,73 @@
+:root {
+    --clr-num: #777;
+    --clr-strongPink: #ff5e78;
+    --clr-background: #f9f871;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    text-align: center;
+}
+
+button {
+    background: none;
+    font-size: 32px;
+}
+
+.main {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.btn {
+    position: absolute;
+    right: 50;
+    top: 50;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: coral;
+    padding: 10px;
+    margin: 4;
+    border-radius: 4px;
+}
+
+.box p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--clr-num);
+}
+
+.col-1 {
+    background-color: var(--clr-background);
+}
+
+.col-2 {
+    background-color: var(--clr-strongPink);
+}
+
+.old-container {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    left: 50px;
+    bottom: 20px;
+}
+
+.modern-container {
+    position: absolute;
+    inset: 50px 20px;
+}
