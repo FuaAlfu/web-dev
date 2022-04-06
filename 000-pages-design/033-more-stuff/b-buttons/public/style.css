@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+}
+
+button {
+    background: #dbc1ac;
+    color: #fff;
+    border: 1px solid #777;
+    border-radius: 4px;
+    padding: 20px 50px;
+}
+
+button:hover {
+    background: #634832;
+    transition-timing-function: ease-out;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+button p {
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
