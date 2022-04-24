@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Example</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+
+<body>
+    <h2>ToolTip</h2>
+    <div class="class" onclick="getMyToolTipFunction()">Hey Click Me to Open ToolTip
+        <span class="displayText" id="displayText">Hi I am ToolTip</span>
+    </div>
+    <!-- (A) MESSAGE BARS CONTAINER -->
+    <div id="mbar"></div>
+
+    <!-- (B) TEST BUTTONS -->
+    <input type="button" value="Default" onclick="mbar('Default')" />
+    <input type="button" value="Info" onclick="mbar('Information', 'info')" />
+    <input type="button" value="Error" onclick="mbar('An Error!', 'err')" />
+    <script src="app.js"></script>
+
+    <!--  -->
+    <!--  -->
+    <div id="hellobar-bar" class="regular closable">
+        <div class="hb-content-wrapper">
+            <div class="hb-text-wrapper">
+                <div class="hb-headline-text">
+                    <p><span>Register for CodexWorld Learning Week and get FREE access to 1000+ tutorials and scripts across programs</span></p>
+                </div>
+            </div>
+            <a href="http://www.codexworld.com" target="_blank" class="hb-cta hb-cta-button">
+                <div class="hb-text-holder">
+                    <p>Register Now</p>
+                </div>
+            </a>
+        </div>
+        <div class="hb-close-wrapper">
+            <a href="javascript:void(0);" class="icon-close">&#10006;</a>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="icon-close" onclick="$('#hellobar-bar').fadeOut()">&#10006;</a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>

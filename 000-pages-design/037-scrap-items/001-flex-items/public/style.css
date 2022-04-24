@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    transform: scaleX(1);
+}
+
+@media (min-width: 768px) {
+    li {
+        font-size: 2px;
+    }
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    box-sizing: border-box;
+    padding: 30px;
+    height: 170px;
+}
+
+.flex-item-a {
+    flex: 0 0 300px;
+    background-color: #eea;
+    transition: 0.7s;
+}
+
+.flex-item-b {
+    flex: 1 1 auto;
+    background-color: #cce;
+    transition: 0.7s;
+}
+
+.flex-item-a:hover,
+.flex-item-b:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
