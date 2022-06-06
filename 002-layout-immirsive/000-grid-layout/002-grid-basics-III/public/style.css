@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+:root {
+    --clr-main: #ccc;
+    --clr-sub: #eee;
+    --clr-one: #abc;
+    --clr-two: #777;
+    --clr-light: #fff;
+}
+
+body {
+    margin: 30px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background: var(--clr-main);
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 200px 300px;
+    gap: 10px;
+    justify-items: stretch;
+    /* justify-items: end; */
+    /* justify-items: center; */
+    /* justify-items: start; */
+    align-items: stretch;
+}
+
+.container>div {
+    color: var(--clr-two);
+    background: var(--clr-sub);
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.container>div:nth-child(1) {
+    grid-column: 1 / span 2;
+}
+
+.container>div:nth-child(2) {
+    grid-column: span 3;
+    justify-self: start;
+}
+
+.container>div:nth-child(3) {
+    grid-column: span 1;
+}
+
+.container>div:nth-child(4) {
+    grid-column: 2 / 6;
+    align-self: end;
+}
+
+.container>div:nth-child(5) {
+    grid-column: span 3;
+}
+
+.container>div:nth-child(6) {
+    grid-column: span 3;
+    align-self: start;
+    justify-self: end;
+}
