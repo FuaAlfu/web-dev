@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+:root {
+    --clr-sub: #ddd;
+}
+
 body {
     margin: 0;
     font-family: "Poppins";
@@ -8,4 +12,16 @@ ul,
 li {
     padding: 0;
     list-style-type: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-gap: 30px;
+}
+
+header {
+    grid-column: span 3;
+    text-align: center;
+    border-bottom: 1px solid var(--clr-sub);
 }
