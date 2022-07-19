@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
 :root {
     --clr-sub: #ddd;
+    --clr-light-gray: #777;
 }
 
 body {
@@ -24,4 +25,32 @@ header {
     grid-column: span 3;
     text-align: center;
     border-bottom: 1px solid var(--clr-sub);
+}
+
+nav {
+    padding: 30px;
+    border-right: 1px solid var(--clr-sub);
+}
+
+nav li {
+    text-decoration: underline;
+}
+
+article {
+    padding: 30px;
+}
+
+article h2 {
+    font-size: 3.5em;
+    max-width: 800px;
+}
+
+article img {
+    width: 100%;
+}
+
+article p {
+    margin-top: 30px;
+    line-height: 2em;
+    color: var(--clr-light-gray);
 }
