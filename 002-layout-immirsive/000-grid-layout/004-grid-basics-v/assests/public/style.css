@@ -2,6 +2,7 @@
 :root {
     --clr-sub: #ddd;
     --clr-light-gray: #777;
+    --clr-gray: #ddd;
 }
 
 body {
@@ -53,4 +54,30 @@ article p {
     margin-top: 30px;
     line-height: 2em;
     color: var(--clr-light-gray);
+}
+
+aside {
+    padding: 30px;
+    border-left: 1px solid var(--clr-gray);
+}
+
+footer {
+    grid-column: span 3;
+    text-align: center;
+    border-top: 1px solid var(--clr-gray);
+    padding: 30px;
+}
+
+
+/* Responsive */
+
+@media screen and(max-width: 1200px) {
+    nav {
+        grid-column: span 3;
+        border-right: 0;
+        border-bottom: 1px solid var(--clr-gray);
+    }
+    nav li {
+        display: inline-block;
+    }
 }
