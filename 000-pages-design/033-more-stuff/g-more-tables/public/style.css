@@ -29,7 +29,7 @@ table,
 th,
 td {
     /* border-collapse: collapse; */
-    border: 1px solid#000;
+    border: 1px solid #000;
 }
 
 header {
@@ -38,7 +38,7 @@ header {
 
 .border {
     padding-top: 25px;
-    border-bottom: 1px solid#ddd;
+    border-bottom: 1px solid #ddd;
     width: 700;
     text-align: center;
 }
