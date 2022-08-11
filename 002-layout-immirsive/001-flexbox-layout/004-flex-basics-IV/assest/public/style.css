@@ -3,15 +3,44 @@
     --clr-sub: #ddd;
     --clr-light-gray: #777;
     --clr-gray: #ddd;
+    --clr-main: #373f51;
+    --clr-c: #999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    padding: 0 20px;
     margin: 0;
     font-family: "Poppins";
+    color: var(--clr-main);
 }
 
 ul,
 li {
     padding: 0;
     list-style-type: none;
+}
+
+header {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+
+header .main-nav ul li {
+    color: var(--clr-c);
+    font-size: bold;
+    cursor: pointer;
+    list-style: none;
+    margin-left: 10px;
+    transition: 0.3s ease;
+    display: inline-block;
+    font-family: tahoma;
 }
