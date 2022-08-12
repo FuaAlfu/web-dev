@@ -5,6 +5,8 @@
     --clr-gray: #ddd;
     --clr-main: #373f51;
     --clr-c: #999;
+    --clr-b: #dfc2f2;
+    --clr-d: #cfb3cd;
 }
 
 * {
@@ -43,4 +45,29 @@ header .main-nav ul li {
     transition: 0.3s ease;
     display: inline-block;
     font-family: tahoma;
+}
+
+header,
+.main-nav ul li {
+    color: var(--clr-main);
+}
+
+header .social i:first-of-type {
+    color: var(--clr-b);
+}
+
+header.social i:nth-of-type(2) {
+    color: var(--clr-b);
+}
+
+header.social i:nth-of-type(3) {
+    color: var(--clr-d);
+}
+
+.item-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
 }
