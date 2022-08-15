@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./views/public/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Document</title>
+
+    <style>
+        .swiper {
+            width: 800px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="./views/images/model-looking-at-viewer-5k-yl-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/2-straight-hair-girl-park-4k-w6-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/3-girl-hunting-down-bq-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/4-red-head-girl-wavy-hair-cl-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/5-girl-white-tank-top-field-4k-ut-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/6-anastasia-scheglova-lying-on-floor-4k-xn-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/7-blonde-girl-short-hair-4k-9e-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>

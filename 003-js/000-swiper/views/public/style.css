@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+:root {
+    --clr-main: #ccc;
+    --clr-sub: #eee;
+    --clr-one: #abc;
+    --clr-two: #777;
+    --clr-light: #fff;
+}
+
+*,
+::after,
+::before {
+    /* padding: 0; */
+    /* margin: 0; */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    height: 100vh;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background: linear-gradient(lightgreen 0%, cyan 100%);
+}
