@@ -12,6 +12,12 @@
     <style>
         .swiper {
             width: 800px;
+            max-width: 100%;
+            height: 500px;
+        }
+        
+        img {
+            width: 800px;
             height: 500px;
         }
     </style>
@@ -20,6 +26,9 @@
 <body>
     <!-- Slider main container -->
     <div class="swiper">
+        <div class="title" style="color: #777;">
+            <h2 style="font-size: 16px;">testing..</h2>
+        </div>
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
@@ -68,6 +77,21 @@
             // Optional parameters
             direction: 'horizontal',
             loop: true,
+            speed: 1000,
+            effect: 'cube',
+            //  slidesPerview: 2,
+            //  slidesPerGroup: 2,
+            breakpoints: {
+                //xxx: xxx
+                640: {
+                    slidesPerview: 2,
+                    slidesPerGroup: 2,
+                },
+                900: {
+                    slidesPerview: 3,
+                    slidesPerGroup: 3,
+                },
+            },
 
             // If we need pagination
             pagination: {
