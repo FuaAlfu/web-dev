@@ -25,7 +25,7 @@
 
 <body>
     <!-- Slider main container -->
-    <div class="swiper">
+    <div class="swiper  main-swiper">
         <div class="title" style="color: #777;">
             <h2 style="font-size: 16px;">testing..</h2>
         </div>
@@ -71,16 +71,62 @@
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
     </div>
+    <!-- END of swiper -->
+    <!-- Slider main container -->
+    <div class="swiper sub-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="./views/images/model-looking-at-viewer-5k-yl-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/2-straight-hair-girl-park-4k-w6-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/3-girl-hunting-down-bq-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/4-red-head-girl-wavy-hair-cl-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/5-girl-white-tank-top-field-4k-ut-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/6-anastasia-scheglova-lying-on-floor-4k-xn-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+            <div class="swiper-slide">
+                <img src="./views/images/7-blonde-girl-short-hair-4k-9e-3840x2400.jpg" alt="">
+            </div>
+            <!-- end of.. -->
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    <!-- END of swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
+        const mainSwiper = new Swiper('.main-swiper', {
             // Optional parameters
-            direction: 'horizontal',
             loop: true,
             speed: 1000,
             effect: 'cube',
-            //  slidesPerview: 2,
-            //  slidesPerGroup: 2,
+            slidesPerview: 4,
+            slidesPerGroup: 4,
+
             breakpoints: {
                 //xxx: xxx
                 640: {
@@ -112,6 +158,38 @@
                 hide: true,
             },
         });
+        //end of main swiper
+        const subSwiper = new Swiper('.sub-swiper', {
+            // Optional parameters
+            loop: true,
+            speed: 1000,
+            effect: 'cube',
+            //  slidesPerview: 2,
+            //  slidesPerGroup: 2,
+            breakpoints: {
+                //xxx: xxx
+                640: {
+                    slidesPerview: 2,
+                    slidesPerGroup: 2,
+                },
+                900: {
+                    slidesPerview: 3,
+                    slidesPerGroup: 3,
+                },
+            },
+
+            // If we need pagination
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+
+        });
+        //end of sub swiper
     </script>
 </body>
 
