@@ -1,0 +1,27 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+
+.images {
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    scroll-behavior: smooth;
+    position: relative;
+    left: 30%;
+    top: 30%;
+}
+
+.images img {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: sticky;
+    top: 0;
+}
