@@ -1,3 +1,13 @@
+:root {
+    --clr-main: #f8b281;
+    --clr-sub: #1b1b1b;
+}
+
+@font-face {
+    font-family: 'Roboto', 'argonite';
+    src: url();
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +15,16 @@
     -moz-box-sizing: border-box
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: sans-serif;
+    background: rgb(66, 66, 66);
+}
+
+.links {
+    display: none;
 }
