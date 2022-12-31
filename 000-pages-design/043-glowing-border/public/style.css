@@ -1,0 +1,48 @@
+body {
+    padding: 120px;
+    font-family: arial;
+    background-color: #283b45;
+}
+
+.glowing {
+    position: relative;
+    padding: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    color: white;
+    font-size: 2.5rem;
+    z-index: 2;
+}
+
+.glowing::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    background-image: linear-gradient( 145deg, #f60000, #cd00cd, #ff8c00, #ffee00, #4de94c, #f60000, #cd00cd, #ff8c00, #ffee00, #4de94c, #f60000, #cd00cd);
+    border-radius: 10px;
+    animation: anim 1.5s linear infinite;
+}
+
+@keyframes anim {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.glowing::after {
+    content: "";
+    z-index: -1;
+    background: black;
+    position: absolute;
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    border-radius: 10px;
+}
