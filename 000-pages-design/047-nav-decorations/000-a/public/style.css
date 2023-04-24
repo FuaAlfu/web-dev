@@ -1,0 +1,24 @@
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar__logo {
+    font-size: 1.5rem;
+}
+
+.navbar__menu {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+}
+
+.navbar__item {
+    list-style-type: none;
+}
+
+.navbar__item a {
+    text-decoration: none;
+}

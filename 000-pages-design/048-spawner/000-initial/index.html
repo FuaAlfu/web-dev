@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="spawner">
+        <div class="item">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Item&w=100&h=100" alt="Item">
+        </div>
+        <button onclick="generateNewImage()">Generate New Image</button>
+    </div>
+    <script>
+        function generateNewImage() {
+            // Generate a random image URL..
+            var imageUrl = "https://placeholdit.imgix.net/~text?txtsize=33&txt=" + Math.random() + "&w=100&h=100";
+            document.querySelector(".spawner .item img").src = imageUrl;
+        }
+    </script>
+</body>
+
+</html>
