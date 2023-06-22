@@ -1,0 +1,90 @@
+:root {
+    --main-clr--: #fff;
+    --sub--clr--: #ddd;
+    --header-clr--: #777;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Header, Main, Footer */
+    grid-template-columns: 1fr;
+    /* Single column layout */
+    min-height: 100vh;
+    /* Set minimum height to fill viewport */
+}
+
+
+/* Header */
+
+header {
+    grid-row: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* Main Content */
+
+main {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* Main Content and Sidebar */
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Sidebar (Aside) */
+
+aside {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    grid-row: 3;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* Additional Styling */
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    line-height: 1.6;
+    font-size: 1.6em;
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--sub--clr--);
+}
+
+.box:has(p) {
+    color: red;
+    text-align: center;
+}
